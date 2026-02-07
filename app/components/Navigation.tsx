@@ -9,7 +9,7 @@ const Navigation = () => {
 	return (
 		<>
 			<nav
-				className={`w-full h-20 p-2 text-lg border-t-2 border-yellow-400 flex justify-between bg-gray-950 sticky top-0`}
+				className={`w-full h-20 p-2 text-lg border-t-2 border-yellow-400 flex justify-between bg-gray-900/98 sticky top-0 z-100`}
 			>
 				<NavLink
 					to="/"

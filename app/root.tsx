@@ -43,7 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <Navigation />
-        {children}
+        <main>{children}</main>
         <ScrollRestoration />
         <Scripts />
       </body>

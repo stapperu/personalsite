@@ -9,11 +9,11 @@ const Navigation = () => {
 	return (
 		<>
 			<nav
-				className={`w-full h-20 p-2 text-lg border-t-2 border-yellow-500 flex justify-between bg-gray-950 sticky top-0`}
+				className={`w-full h-20 p-2 text-lg border-t-2 border-yellow-400 flex justify-between bg-gray-950 sticky top-0`}
 			>
 				<NavLink
 					to="/"
-					className="leftside p-2 flex w-1/2 text-md items-center text-yellow-500"
+					className="leftside p-2 flex w-1/2 text-md items-center text-yellow-300"
 				>
 					<FaEarthAmericas className="mr-3 min-h-8 min-w-8" />
 					<span className={`text-4xl`}>Cheap Labour</span>
@@ -24,7 +24,7 @@ const Navigation = () => {
 						<NavLink
 							to="/about"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"}`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"}`
 							}
 						>
 							About
@@ -34,7 +34,7 @@ const Navigation = () => {
 						<NavLink
 							to="/blog"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"}`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"}`
 							}
 						>
 							Blog
@@ -44,7 +44,7 @@ const Navigation = () => {
 						<NavLink
 							to="/projects"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"}`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"}`
 							}
 						>
 							Projects
@@ -54,7 +54,7 @@ const Navigation = () => {
 						<NavLink
 							to="/contact"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"}`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"}`
 							}
 						>
 							Contact
@@ -63,7 +63,7 @@ const Navigation = () => {
 				</ul>
 				<div className="menu flex items-center md:hidden">
 					<button
-						className={`bg-yellow-500 text-black text-2xl p-3 m-2 cursor-pointer`}
+						className={`bg-yellow-400 text-black text-2xl p-3 m-2 cursor-pointer`}
 						onClick={() => setIsMenu((prev) => !prev)}
 					>
 						{isMenu ? <FaTimes /> : <FaBars />}
@@ -71,11 +71,11 @@ const Navigation = () => {
 				</div>
 				{/* mobile nav dropdown */}
 				{isMenu && (
-					<div className="absolute top-19 w-full right-0 p-4 bg-gray-950 flex flex-column text-lg border-b border-yellow-500">
+					<div className="absolute top-19 w-full right-0 p-4 bg-gray-950 flex flex-column text-lg border-b border-yellow-400">
 						<NavLink
 							to="/about"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"} p-2`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"} p-2`
 							}
 						>
 							About
@@ -86,7 +86,7 @@ const Navigation = () => {
 						<NavLink
 							to="/blog"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"} p-2`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"} p-2`
 							}
 						>
 							Blog
@@ -97,7 +97,7 @@ const Navigation = () => {
 						<NavLink
 							to="/projects"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"} p-2`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"} p-2`
 							}
 						>
 							Projects
@@ -108,7 +108,7 @@ const Navigation = () => {
 						<NavLink
 							to="/contact"
 							className={({ isActive }) =>
-								`hover:text-yellow-500 ${isActive ? "text-yellow-500" : "text-white"} p-2`
+								`hover:text-yellow-300 ${isActive ? "text-yellow-300" : "text-white"} p-2`
 							}
 						>
 							Contact

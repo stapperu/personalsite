@@ -4,11 +4,11 @@ import { FiCornerDownLeft } from "react-icons/fi";
 const HeroBanner = () => {
 	return (
 		<>
-			<div className="relative w-full bg-gray-700/25 text-yellow-50 justify-center p-1 md:p-3">
+			<div className="relative w-full bg-gray-700/20 text-yellow-50 justify-center p-1 md:p-3">
 				<div className="w-3/5 h-2/5 border-6 border-yellow-300/3 absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden lg:block"></div>{" "}
-				<FiTerminal className=" absolute text-8xl text-yellow-300 top-10 left-10 opacity-7" />
-				<div className="z-5 text-shadow-black/30 text-shadow-md  w-full text-yellow-50 flex flex-col justify-center items-center p-8 ">
-					<h1 className="relative p-2 text-4xl font-bold border-2 border-yellow-300 pl-20 pr-30">
+				<FiTerminal className=" absolute text-8xl text-yellow-300 top-10 left-10 opacity-5" />
+				<div className="z-5 text-shadow-black/30 text-shadow-md  w-full text-yellow-50 flex flex-col justify-center items-center pt-8 ">
+					<h1 className="relative p-2 text-4xl font-bold border-2 border-yellow-300 pl-20 pr-20">
 						<FiTerminal className="absolute left-5 top-4 text-yellow-300" />  My
 						name is <span className="text-yellow-300">Konrad</span>
 						<FiCornerDownLeft className="absolute bottom-1 right-5 text-yellow-300" />
@@ -32,7 +32,7 @@ const HeroBanner = () => {
 						</span>
 					</p>
 				</div>{" "}
-				<FiCornerDownLeft className="absolute bottom-10 right-10 text-8xl opacity-7 text-yellow-300" />
+				<FiCornerDownLeft className="absolute bottom-10 right-10 text-8xl opacity-5 text-yellow-300" />
 			</div>
 		</>
 	);

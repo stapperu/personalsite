@@ -1,0 +1,102 @@
+{
+  "blogArticles": [
+    {
+      "id": 1,
+      "title": "DevDash",
+      "headline": "Why DevDash Might Be the Ultimate Productivity Sidekick Every Developer Needs",
+      "description": "A productivity dashboard for developers to track tasks, goals, and inspiration.",
+      "excerpt": "Struggling to stay organized as a developer? DevDash brings tasks, goals, and daily inspiration into one clean interface.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+      "url": "https://example.com",
+      "date": "2025-02-01",
+      "category": "Fullstack",
+      "featured": false,
+      "readTime": 6,
+      "author": "Konrad"
+    },
+    {
+      "id": 2,
+      "title": "SnapFeed",
+      "headline": "Why SnapFeed Could Be the Freshest Way to Share Photos Without the Overload",
+      "description": "A photo-sharing app with uploads, a feed, and social features.",
+      "excerpt": "Share moments instantly with friends in a clean, modern photo feed experience.",
+      "image": "https://images.unsplash.com/photo-1611162617210-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=800",
+      "url": "https://example.com",
+      "date": "2025-01-20",
+      "category": "Frontend",
+      "featured": true,
+      "readTime": 5,
+      "author": "Konrad"
+    },
+    {
+      "id": 3,
+      "title": "NoteNest",
+      "headline": "Why NoteNest Is Becoming My Go-To for Quick, Offline Note-Taking in 2026",
+      "description": "A note-taking app with categories and local storage support.",
+      "excerpt": "Capture ideas quickly with categories and offline-first storage — no cloud required.",
+      "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800",
+      "url": "https://example.com",
+      "date": "2024-12-15",
+      "category": "Frontend",
+      "featured": true,
+      "readTime": 4,
+      "author": "Konrad"
+    },
+    {
+      "id": 4,
+      "title": "FitTrack",
+      "headline": "Why FitTrack Is the New Best Thing Since Sliced Bread for Tracking Workouts",
+      "description": "A fitness tracker that logs workouts and progress visually.",
+      "excerpt": "Track every rep, set, and milestone with beautiful progress visualizations.",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
+      "url": "https://example.com",
+      "date": "2024-11-05",
+      "category": "Fullstack",
+      "featured": false,
+      "readTime": 7,
+      "author": "Konrad"
+    },
+    {
+      "id": 5,
+      "title": "CodeCritic",
+      "headline": "Why CodeCritic Might Finally Make Code Reviews Actually Enjoyable",
+      "description": "A code snippet review tool with comments and upvotes.",
+      "excerpt": "Share code snippets, get constructive feedback, and vote on the best solutions.",
+      "image": "https://images.unsplash.com/photo-1555066931-bf19c0fd1085?auto=format&fit=crop&q=80&w=800",
+      "url": "https://example.com",
+      "date": "2024-10-12",
+      "category": "Frontend",
+      "featured": false,
+      "readTime": 5,
+      "author": "Konrad"
+    },
+    {
+      "id": 6,
+      "title": "InspoQuote",
+      "headline": "Why InspoQuote Is the Tiny Daily Habit That Keeps My Motivation High",
+      "description": "A daily inspiration quote generator with save/share options.",
+      "excerpt": "One quote a day to spark creativity and keep the motivation flowing.",
+      "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=200",
+      "url": "https://example.com",
+      "date": "2024-09-28",
+      "category": "Fullstack",
+      "featured": false,
+      "readTime": 4,
+      "author": "Konrad"
+    },
+    {
+      "id": 7,
+      "title": "Blogify",
+      "headline": "Why Blogify Proves You Don’t Need a Complex CMS to Run a Clean Blog",
+      "description": "A minimalist blogging platform with Markdown and comments.",
+      "excerpt": "Simple, fast, Markdown-powered blogging — no bloat, just writing.",
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800",
+      "url": "https://example.com",
+      "date": "2024-09-01",
+      "category": "Fullstack",
+      "featured": false,
+      "readTime": 6,
+      "author": "Konrad"
+    }
+  ]
+}

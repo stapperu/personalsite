@@ -1,10 +1,10 @@
 import { FiTerminal } from "react-icons/fi";
 import { FiCornerDownLeft } from "react-icons/fi";
-
+import { Link } from "react-router";
 const HeroBanner = () => {
 	return (
 		<>
-			<div className="relative w-full bg-gray-700/20 text-yellow-50 justify-center p-1 md:p-3">
+			<div className=" bannerwrapper relative w-full bg-blue-900/20 text-yellow-50 justify-center p-3 md:pt-8 md:pb-12 ">
 				<div className="w-3/5 h-2/5 border-6 border-yellow-300/3 absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden lg:block"></div>{" "}
 				<FiTerminal className=" absolute text-8xl text-yellow-300 top-10 left-10 opacity-5" />
 				<div className="z-5 text-shadow-black/30 text-shadow-md  w-full text-yellow-50 flex flex-col justify-center items-center pt-8 ">
@@ -31,6 +31,7 @@ const HeroBanner = () => {
 							Simple is beautiful. Simple works.
 						</span>
 					</p>
+                    <Link to="/about" className="p-3 pl-8 pr-8 text-2xl uppercase bg-yellow-400 text-black ">Get to know me</Link>
 				</div>{" "}
 				<FiCornerDownLeft className="absolute bottom-10 right-10 text-8xl opacity-5 text-yellow-300" />
 			</div>

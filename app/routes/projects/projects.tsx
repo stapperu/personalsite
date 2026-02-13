@@ -1,12 +1,15 @@
 import type {Route} from "./+types/projects";
-import db from "../../../data/data/db.json";
 import type { Project } from "~/types";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FiBox } from "react-icons/fi";
+import { Link } from "react-router";
 
 
 export async function loader({request}:Route.LoaderArgs):Promise<any>{
-    return db;
+  const url=new URL('/data/db.json',request.url);
+  const res=await fetch(url);
+  const db=await res.json();  
+  return db;
 }
 
 const ProjectsPage = ({loaderData}:Route.ComponentProps)=>{
@@ -17,7 +20,8 @@ const ProjectsPage = ({loaderData}:Route.ComponentProps)=>{
       <h1>BIG PROJECTS</h1>
     <div className="grid gap-4 md:grid-cols-2 p-4">
       {projects.map((project:Project)=>(
-        <div key={project.id} className="bg-gray-900 m-2 pt-8 p-8 text-yellow-50 shadow-[0px_-2px_2px_yellow] z-5 opacity-85">
+        <Link to={`/projects/${project.id}`} key={project.id}>
+        <div  className="bg-gray-900 m-2 pt-8 p-8 text-yellow-50 shadow-[0px_-2px_2px_yellow] z-5 opacity-85">
             <h2 className="text-yellow-300 text-xl uppercase border-b-2 border-yellow-300">{project.title}</h2>
             <img src={project.image} className="mt-4 mb-4"/> 
             <p className="m-2 text-lg">{project.description}</p> 
@@ -25,7 +29,7 @@ const ProjectsPage = ({loaderData}:Route.ComponentProps)=>{
             <p>Check it out yourself at: <span className="text-yellow-300 text-lg font-bold">{project.url}<FiArrowUpRight className="inline-block ml-1" /></span></p> 
             <p className="text-sm text-yellow-200/50" >Released on: {project.date}</p> 
             
-            </div>
+            </div></Link>
       ))}
     </div></>
   )

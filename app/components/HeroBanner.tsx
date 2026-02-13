@@ -28,10 +28,10 @@ const HeroBanner = () => {
 						over-engineer your website and over-pay some hyped up developer on
 						AI crack.{" "}
 						<span className="pl-4 pr-4 m-1 text-yellow-300 bg-gray-900">
-							Simple is beautiful. Simple works.
+							You need website. I need food.
 						</span>
 					</p>
-                    <Link to="/about" className="p-3 pl-8 pr-8 text-2xl uppercase bg-yellow-400 text-black ">Get to know me</Link>
+                    <Link to="/about" className="p-3 pl-8 pr-8 text-2xl text-shadow-none uppercase bg-yellow-400 text-black ">Get to know me</Link>
 				</div>{" "}
 				<FiCornerDownLeft className="absolute bottom-10 right-10 text-8xl opacity-5 text-yellow-300" />
 			</div>

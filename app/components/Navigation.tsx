@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router";
-import { FaEarthAmericas } from "react-icons/fa6";
+import { FiCpu } from "react-icons/fi";
 import { FaTimes, FaBars } from "react-icons/fa";
 
 const Navigation = () => {
@@ -9,13 +9,13 @@ const Navigation = () => {
 	return (
 		<>
 			<nav
-				className={`w-full h-20 p-2 text-lg border-t-2 border-yellow-400 flex justify-between bg-gray-900/98 sticky top-0 z-100`}
+				className={`w-full h-20 p-2 text-lg border-t-2 border-yellow-400 flex justify-between bg-gray-900/95 sticky top-0 z-100`}
 			>
 				<NavLink
 					to="/"
 					className="leftside p-2 flex w-1/2 text-md items-center text-yellow-300"
 				>
-					<FaEarthAmericas className="mr-3 min-h-8 min-w-8" />
+					<FiCpu className="mr-3 min-h-8 min-w-8" />
 					<span className={`text-4xl`}>Cheap Labour</span>
 				</NavLink>
 

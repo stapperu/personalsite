@@ -26,7 +26,7 @@ const currentArticles=blogArticles.slice(indexOfFirst,indexOfLast)
 const renderPaginationButtons = () => (
   <div className="paginationSection flex justify-center gap-2 mt-8">
 {Array.from({length:totalPages},(_,index)=>(
-  <button key={index+1} className="px-3 py-1 cursor-pointer rounded z-10" onClick={()=>SetCurrentPage(index+1)}>{index+1}</button>
+  <button key={index+1} className="px-3 py-1 cursor-pointer rounded z-10 bg-blue-950" onClick={()=>SetCurrentPage(index+1)}>{index+1}</button>
 ))}
 
   </div>
@@ -40,7 +40,7 @@ const renderPaginationButtons = () => (
     <div className="grid gap-4 md:grid-cols-2 p-4">
       {currentArticles.map((article:any)=>(
          <Link to={`/blog/${article.id}`} key={article.id}>
-        <div className="bg-gray-900 m-2 pt-8 p-8 text-yellow-50 shadow-[0px_-2px_2px_yellow] z-5 opacity-85">
+        <div className="bg-gray-900 m-2 pt-8 p-8 text-yellow-50 shadow-[0px_-2px_2px_yellow] z-5 opacity-85 hover:scale-[1.015]">
             <h2 className="text-yellow-300 text-xl border-yellow-300">{article.headline}</h2>
             <p className="m-2 text-sm">{article.excerpt}</p> 
             <img src={article.image} className="mt-4 mb-4"/> 

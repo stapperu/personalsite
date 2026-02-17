@@ -23,18 +23,26 @@ const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
 
 	const renderPaginationButtons = () => (
 		<div className="paginationSection flex justify-center gap-2 mt-8">
-			{Array.from({ length: totalPages }, (_, index) => (
-				<button
-					key={index + 1}
-					className="px-3 py-1 cursor-pointer rounded bg-blue-950 z-10"
-					onClick={() => setCurrentPage(index + 1)}
-				>
-					{" "}
-					{index + 1}
-				</button>
-			))}
+			<button
+				className="px-3 py-1 cursor-pointer rounded bg-blue-950 z-10"
+				onClick={() => {
+					if (currentPage > 1) setCurrentPage((prev) => prev - 1);
+				}}
+			>
+				{"<"}
+			</button>
+			<button
+				className="px-3 py-1 cursor-pointer rounded bg-blue-950 z-10"
+				onClick={() => {
+					if (currentPage < totalPages) {
+						setCurrentPage((prev) => prev + 1);
+					}
+				}}
+			>
+				{">"}
+			</button>
 		</div>
-  );
+	);
 
 	return (
 		<>
@@ -43,7 +51,7 @@ const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
 			<div className="grid gap-4 md:grid-cols-2 p-4">
 				{currentProjects.map((project: Project) => (
 					<Link to={`/projects/${project.id}`} key={project.id}>
-						<div className="bg-gray-900 m-2 pt-8 p-8 text-yellow-50 shadow-[0px_-2px_2px_yellow] z-5 opacity-85">
+						<div className="bg-gray-900 m-2 pt-8 p-8 text-yellow-50 shadow-[0px_-2px_2px_yellow] z-5 opacity-85 hover:scale-[1.015]">
 							<h2 className="text-yellow-300 text-xl uppercase border-b-2 border-yellow-300">
 								{project.title}
 							</h2>

@@ -5,7 +5,7 @@ const mainLayout = () => {
     return ( 
         <>
 
-        <section className="max-w-6xl mx-auto px-6 my-8">
+        <section className="max-w-7xl mx-auto px-6 my-8">
             <Outlet />
         </section>
         </>
